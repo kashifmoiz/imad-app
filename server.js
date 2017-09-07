@@ -30,7 +30,8 @@ content: `
         var heading = data.heading;
         var content = data.content;
     }
-    var htmlTemplate = `<html>
+    var htmlTemplate = `
+    <html>
 <head>
     <title>
         ${title}
@@ -61,9 +62,10 @@ content: `
         
         </body>
         </html>
-`;
-return htmlTemplate;
+        `;
+        return htmlTemplate;
 
+  
 
 }
 app.get('/', function (req, res) {
